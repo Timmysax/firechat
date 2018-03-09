@@ -6,19 +6,13 @@ function onReady(callback) {
 
 // App logic goes here
 function runChatApp() {
-    // References to the DOM nodes for important elements
-    var messageList = document.getElementById('message-list');
-    var chatForm = document.getElementById('chat-form');
-    var usernameField = document.getElementById('username-field');
-    var messageField = document.getElementById('message-field');
+    // Set up references to the DOM nodes for important elements
     
     function buildChatElement(chatObject) {
         // Your code for rendering messages goes here
     }
 
-    // Setup firebase database here
-    
-    chatForm.addEventListener('submit', function(event) {
+    function submitHandler(event) {
         // This prevents the default submit behaviour so you can completely
         // control the submission
         event.preventDefault();
@@ -27,7 +21,11 @@ function runChatApp() {
 
         // This stops the page from reloading on submit
         return false;
-    });
+    }
+
+    // Setup firebase database here
+    
+    // Setup submit event handler herex
 }    
 
 // Start app on ready!
