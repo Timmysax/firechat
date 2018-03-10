@@ -19,12 +19,14 @@ To complete this tutorial, you will need:
 - If you have not logged in before, run `firebase login` to log in to
   Firebase from your console.
 - Run `firebase init` to set up your project
-  - Select `Real-time Database` and `Firebase Hosting` on the list of required services
+  - Select `Real-time Database` and `Firebase Hosting` on the list of required
+    services
   - Select your project name when prompted
   - Make sure you don't overwrite the public folder!
 - Edit the produced `database.rules.json` file and set the values of `.read`
   and `.write` to `true`.
-- Once that is done, run `firebase deploy` to push the barebones version of    your app to Firebase Hosting.
+- Once that is done, run `firebase deploy` to push the barebones version of
+  your app to Firebase Hosting.
 - Get coding!
 
 ## Tutorial steps
@@ -32,8 +34,10 @@ To complete this tutorial, you will need:
 An HTML/CSS template has been provided so you can focus on building out the
 chat app. Feel free to tweak it as much as you like!
 
-This is currently a two-step tutorial, and the completed code for each step
-can be found on the appropriately named branch:
+- Load the Firebase SDK in the `index.html` file.
+- Set up references to the DOM nodes for important elements
+- Set up the Firebase database object and get a reference to the message path
+- Create an event listener to handle submitting the chat form
+- Display outgoing/incoming messages on all clients
 
-1. Basic chat functionality: on branch `basic-chat`
-2. Anonymous authentication: on branch `anon-auth` (In progress)
+- TODO (Self): Try adding authentication!

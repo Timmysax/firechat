@@ -25,7 +25,7 @@ function runChatApp() {
 
     // Setup firebase database here
     
-    // Setup submit event handler herex
+    // Setup submit event handler here
 }    
 
 // Start app on ready!
